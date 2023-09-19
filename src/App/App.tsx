@@ -1,10 +1,10 @@
+import Sidebar from "@/Components/Sidebar"
+
 function App() {
 
   return (
       <>
-      <div>
-        <text className="text-9xl">Hello World!</text>
-      </div>
+        <Sidebar></Sidebar>
       </>
   )
 }
