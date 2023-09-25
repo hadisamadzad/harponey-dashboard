@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  harponey:
+    container_name: harponey
+    image: 'harponey'
+    restart: always
+
+    ports:
+      - 43001:8080
+    build:
+      context: .
+      dockerfile: Dockerfile
