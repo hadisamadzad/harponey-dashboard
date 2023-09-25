@@ -1,12 +1,7 @@
-import Sidebar from "@/Components/Sidebar"
+import MainLayout from "@/Layouts/MainLayout";
 
 function App() {
-
-  return (
-      <>
-        <Sidebar></Sidebar>
-      </>
-  )
+  return <MainLayout></MainLayout>;
 }
 
-export default App
+export default App;
