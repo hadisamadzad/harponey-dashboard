@@ -15,6 +15,11 @@ interface SidebarProps {
   toggleSidebar: () => void;
 }
 
+// Constants
+const logoName = "harponey";
+const shortLogoName = "h";
+
+// Variants
 const sidebarVariants = {
   open: {
     width: 250, // Expand the sidebar width when open
@@ -24,17 +29,18 @@ const sidebarVariants = {
   },
 };
 
-const logoName = "harponey";
-const shortLogoName = "h";
+// CSS Classes
+const classDividerCommon = "text-primary-300 border-t-1.5";
+const classDividerIsOpen = classDividerCommon + " border-primary-800";
+const classDividerIsClosed =
+  classDividerCommon + " border-primary-400 duration-1000 -pt-1";
 
-// Classes
-const menuSectionClasses = "text-primary-300";
 const menuItemClasses = "text-zinc-300 h-12 mb-2";
 const iconClasses = "text-xl text-white pointer-events-none flex-shrink-0";
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   return (
-    <div className="sidebar-container h-full relative bg-secondary-300">
+    <div className="sidebar-container h-full relative">
       <motion.div
         className="sidebar h-full bg-primary-800 p-3"
         initial={isOpen ? "open" : "closed"}
@@ -54,9 +60,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
           aria-label="Listbox menu with descriptions"
         >
           <ListboxSection
-            title="Actions"
+            title={isOpen ? "Actions" : " "}
             showDivider
-            className={menuSectionClasses}
+            className={isOpen ? classDividerIsOpen : classDividerIsClosed}
           >
             <ListboxItem
               key="dashboard"
@@ -81,7 +87,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
               <span className="text-white">Instances</span>
             </ListboxItem>
           </ListboxSection>
-          <ListboxSection title="Danger zone" className={menuSectionClasses}>
+          <ListboxSection
+            title={isOpen ? "Actions" : " "}
+            className={isOpen ? classDividerIsOpen : classDividerIsClosed}
+          >
             <ListboxItem
               key="delete"
               startContent={<GoSidebarExpand className={iconClasses} />}
