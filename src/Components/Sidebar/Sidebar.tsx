@@ -6,7 +6,6 @@ import {
   ListboxItem,
   ListboxSection,
 } from "@nextui-org/react";
-import "./Sidebar.css";
 import { GoSidebarCollapse, GoSidebarExpand } from "react-icons/go";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
 
