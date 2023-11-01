@@ -29,9 +29,9 @@ const sidebarVariants = {
 };
 
 // CSS Classes
-const classSidebarContainer = "h-full  p-3"
-const classSidebarHeader = ""
-const classSidebarMenu = ""
+const classSidebarContainer = "h-full  p-3";
+const classSidebarHeader = "";
+//const classSidebarMenu = ""
 
 const classDividerCommon = "text-primary-300 border-t-1.5";
 const classDividerIsOpen = classDividerCommon + " border-primary-800";
@@ -69,7 +69,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
             >
               <ListboxItem
                 key="dashboard"
-                startContent={<MdOutlineSpaceDashboard className={iconClasses} />}
+                startContent={
+                  <MdOutlineSpaceDashboard className={iconClasses} />
+                }
                 className={menuItemClasses}
               >
                 <span className="text-zinc-200 ">Dashboard</span>
@@ -162,7 +164,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
           </Listbox>
         </div>
 
-
         <Button
           isIconOnly
           color="default"
@@ -174,7 +175,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
           {isOpen ? <GoSidebarExpand /> : <GoSidebarCollapse />}
         </Button>
       </motion.div>
-    </aside >
+    </aside>
   );
 };
 
