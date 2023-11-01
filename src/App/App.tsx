@@ -1,12 +1,7 @@
-function App() {
+import MainLayout from "@/Layouts/MainLayout";
 
-  return (
-      <>
-      <div>
-        <text className="text-9xl">Hello World!</text>
-      </div>
-      </>
-  )
+function App() {
+  return <MainLayout></MainLayout>;
 }
 
-export default App
+export default App;
