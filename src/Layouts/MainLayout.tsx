@@ -11,39 +11,79 @@ const MainLayout: React.FC = () => {
   };
 
   return (
-    <>
-      <div className="flex h-screen overflow-hidden">
-        <Sidebar
-          isOpen={isSidebarOpen}
-          toggleSidebar={toggleSidebar}
-        ></Sidebar>
+    <div className="flex h-screen overflow-hidden">
+      <aside aria-label="Sidebar Container">
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar}></Sidebar>
+      </aside>
 
-        <div className="flex flex-col h-screen w-full justify-between">
-          <header>
-            <Header />
-          </header>
+      <div className="flex flex-col w-full">
+        <header>
+          <Header />
+        </header>
 
-          <div>
-            main
-            <p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p><p>mainmainmainmain</p>
-            <p>mainmainmainmain</p>
-          </div>
-
+        <main className="flex-1 overflow-y-auto pl-6 pt-5">
+          Main Container
+          <p>Start ....................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>..........................................</p>
+          <p>...................................... End</p>
+        </main>
+        <footer>
           <Footer />
-        </div>
-
+        </footer>
       </div>
-    </>
+    </div>
   );
 };
 
