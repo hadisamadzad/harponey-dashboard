@@ -1,9 +1,15 @@
-import { Button, Link, Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
+import {
+  Button,
+  Link,
+  Navbar,
+  NavbarContent,
+  NavbarItem,
+} from "@nextui-org/react";
 import React from "react";
 
 const Header: React.FC = () => {
   return (
-      <Navbar position="static" isBordered maxWidth="full">
+    <Navbar position="static" isBordered maxWidth="full">
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
@@ -30,8 +36,8 @@ const Header: React.FC = () => {
             Sign Up
           </Button>
         </NavbarItem>
-        </NavbarContent>
-      </Navbar>
+      </NavbarContent>
+    </Navbar>
   );
 };
 
