@@ -1,18 +1,13 @@
 import React from "react";
 
 // Constants
-const copyright = "2023 kubCheck";
-
-//const height = "50px";
-
-// CSS Classes
-//const classDividerCommon = "text-primary-300 border-t-1.5";
+const copyright: string = `Copyright \u00A9 ${new Date().getUTCFullYear()} kubCheck.`;
 
 const Footer: React.FC = () => {
   return (
-    <footer className="absolute left-0 bottom-0  bg-blue-100">
+    <div className="px-4 pb-2 text-right text-sm text-zinc-400">
       {copyright}
-    </footer>
+    </div>
   );
 };
 
